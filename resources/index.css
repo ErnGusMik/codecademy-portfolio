@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1e1e1e;
+    margin: 0;
+    color: #d9d9d9;
+}
+h1, h3 {
+    font-weight: 600;
+    color: #f15757;
+}
+/* HEADER */
+header {
+    margin-top: 100px;
+}
+header div {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    text-align: left;
+    z-index: 2;
+    font-size: 1.5vw;
+}
+header h1 {
+    font-size: 5vw;
+    font-weight: 600;
+    color: #f15757;
+}
+header img {
+    width: 60%;
+    float: right;
+    z-index: 1;
+    margin-right: 50px;
+    margin-top: 50px;
+    padding: 0;
+}
+@media screen and (max-width: 920px) {
+    header div {
+        top: 15%
+    }
+}
+
+@media screen and (max-width: 830px) and (min-width: 600px) {
+    header img {
+        width: 80%;
+        margin-right: 0;
+    }
+    header div {
+        top: 23%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header div {
+        font-size: 1vw;
+        top: 20%;
+    }
+    header h1 {
+        font-size: 4vw;
+    }
+    header img {
+        width: 100%;
+        margin: 0;
+        margin-top: 30px;
+    }
+    header {
+        margin-top: 50px;
+    }
+}
+
+/* MAIN */
+
+/* ABOUT */
+main {
+    position: relative;
+    clear: both;
+}
+main .about {
+    float: right;
+    width: 60%;
+    margin-right: 50px;
+    text-align: justify;
+    font-size: 1.2vw;
+}
+/* SKILLS */
+main .skills {
+    float: left;
+    font-size: 1.2vw;
+    margin-left: 30px;
+    max-width: 30%;
+}
+.skills i {
+    font-size: 2vw;
+    margin: 5px;
+}
+@media screen and (max-width: 920px) {
+    main .about {
+        width: 60%;
+    }
+    main .skills {
+        max-width: 20%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main .about {
+        width: 70%;
+        float: none;
+        text-align: center;
+        margin: auto;
+        padding-top: 20px;
+        font-size: 3vw;
+    }
+    main .skills {
+        max-width: 70%;
+        float: none;
+        text-align: center;
+        margin: auto;
+        padding-top: 20px;
+    }
+    .skills i, .skills h3 {
+        font-size: 3vw;
+    }
+
+}
+
+/* PROJECTS */
+.projects {
+    clear: both;
+    font-size: 1.2vw;
+    text-align: center;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+}
+.projects h3 {
+    font-size: 2vw;
+    margin-top: 50px;
+}
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project .open-btn {
+    min-width: fit-content;
+    padding: 3vw;
+    border: 1px solid #f15757;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    flex: 1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.popup-modal {
+    display: none;
+    position: fixed;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.popup {
+    background-color: #d9d9d9;
+    color: #1e1e1e;
+    margin: 15vh auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #f15757;
+    max-width: 70%;
+    cursor: auto;
+}
+.project .open-btn:hover {
+    background-color: #f15757;
+}
+.popup h3 {
+    margin-top: 20px;
+}
+.close-btn {
+    color: #000;
+    font-size: 2vw;
+    float: right;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.close-btn:hover, .close-btn:focus {
+    cursor: pointer;
+    color: #f15757;
+}
+
+.popup a {
+    text-decoration: none;
+    color: #f15757;
+}
+.popup a:hover {
+    text-decoration: underline;
+}
+@media screen and (max-width: 600px) {
+    .projects {
+        max-width: 70%;
+        margin-top: 20px;
+        font-size: 3vw;
+    }
+    .projects h3 {
+        font-size: 4vw;
+    }
+    .project-container {
+        flex-direction: column;
+    }
+    .project .open-btn {
+        margin: 10px;
+    }
+    .project {
+        width: 80%;
+    }
+    .project span {
+        font-size: 5vw;
+        margin-top: 0;
+    }
+}

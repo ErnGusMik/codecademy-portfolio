@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ErnGusMik -- Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="./resources/index.css">   
+    <link rel="stylesheet" href="./resources/footer.css">
+    <link rel="stylesheet" href="./resources/nav.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <!-- Create nav -- logo on left (img src=x) nav on right. Background color #D9D9D9 -->
+    <nav>
+        <div class="nav-left">
+            <img src="./resources/logo.png" alt="logo">
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Create header (.banner). Backg color #1e1e1e -->
+    <header class="banner">
+        <div class="banner-text">
+            <h1>You're extraordinary.</h1>
+            <h2>Let's make everyone know.</h2>
+            <h2>Let's make a website.</h2>
+        </div>
+        <img src="./resources/banner-img.jpg" alt="Website making photo">
+    </header>
+    <!-- Create main -->
+    <main>
+        <article class="skills">
+            <h3>Skills</h3>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js-square"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-git-alt"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-wordpress"></i>
+            <i class="fa-brands fa-figma"></i>
+            <i class="fa-brands fa-swift"></i> 
+            <i class="fa-brands fa-npm"></i>
+            <i class="fa-brands fa-markdown"></i>
+            <i class="fa-brands fa-bootstrap"></i>
+        </article>
+        <!-- About me -->
+        <article class="about">
+            <h3>About me</h3>
+            <p>Hey there! I am ErnGusMik, a web developer. I create websites and python libraries. Some of my projects can be seen below. I have many projects that I have planned to do, like an authentication service and api, which I will use for my forms and dropsite websites. I like technology and football (soccer). I currently only make websites for fun, not profits.</p>
+        </article>
+        <!-- Projects -->
+        <article class="projects">
+            <h3 class="project-h3">Projects</h3>
+            <div class="project-container">
+                <section class="project">
+                    <h4 onclick="openClickHandler(1)" class="open-btn">Dropsite</h4>
+                    <div class="popup-modal" id="project-1">
+                        <section class="popup">
+                            <span class="close-btn" onclick="closeClickHandler(1)">&times;</span>
+                            <h3>Dropsite</h3>
+                            <p>A website builder for dropshipping. Currently under development.</p>
+                            <h4>Technologies used</h4>
+                            <p>HTML5, CSS3, JavaScript, NodeJS, Git, Markdown</p>
+                            <h4>Link to project</h4>
+                            <a href="https://github.com/erngusmik/dropsite" target="_blank">Access on <i class="fa-brands fa-github"></i></a>
+                        </section>
+                    </div>
+                </section>
+                <!-- Project python-tello -->
+                <section class="project">
+                    <h4 onclick="openClickHandler(2)" class="open-btn">Tello-sdk</h4>
+                    <div class="popup-modal" id="project-2">
+                        <section class="popup">
+                            <span class="close-btn" onclick="closeClickHandler(2)">&times;</span>
+                            <h3>Tello-sdk</h3>
+                            <p>A python library for controlling the TELLO or RMTT drones from a computer using UDP. Availapble on pip.</p>
+                            <h4>Technologies used</h4>
+                            <p>Python, Sentry (error catching), Deepsource (code checking), Git</p>
+                            <h4>Link to project</h4>
+                            <a href="https://github.com/erngusmik/python-tello" target="_blank">Access on <i class="fa-brands fa-github"></i></a>
+                        </section>
+                    </div>
+                </section>
+                <!-- Project review -->
+                <section class="project">
+                    <h4 onclick="openClickHandler(3)" class="open-btn">Movie review</h4>
+                    <div class="popup-modal" id="project-3">
+                        <section class="popup">
+                            <span class="close-btn" onclick="closeClickHandler(3)">&times;</span>
+                            <h3>Movie review</h3>
+                            <p>A movie review for an ICT class. </p>
+                            <h4>Technologies used</h4>
+                            <p>HTML5, CSS3, Git</p>
+                            <h4>Link to project</h4>
+                            <a href="https://github.com/erngusmik/review" target="_blank">Access on <i class="fa-brands fa-github"></i></a>
+                        </section>
+                    </div>
+                </section>
+                <!-- Project forms -->
+                <section class="project">
+                    <h4 onclick="openClickHandler(4)" class="open-btn">Forms</h4>
+                    <div class="popup-modal" id="project-4">
+                        <section class="popup">
+                            <span class="close-btn" onclick="closeClickHandler(4)">&times;</span>
+                            <h3>Forms</h3>
+                            <p>A survey website for assignments, quizzess, feedback forms, etc. Currently in the early stages of development.</p>
+                            <h4>Technologies used</h4>
+                            <p>HTML5, CSS3, JavaScript, NodeJS, Git, Markdown</p>
+                            <h4>Link to project</h4>
+                            <a href="https://github.com/erngusmik/forms" target="_blank">Access on <i class="fa-brands fa-github"></i></a>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+    <!-- Make footer (black) -->
+    <footer>
+        <div class="footer-left">
+            <p>Copyright &copy; 2022, ErnGusMik</p>
+        </div>
+        <div class="footer-right">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
